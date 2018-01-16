@@ -1,7 +1,7 @@
 <mat-sidenav-container>
-    
+
       <mat-sidenav #sidenav mode="push">
-        <div class="branding"><img [src]="logo"/> <span>Tagia</span></div>
+        <div class="branding"><img [src]="logo"/> <span>Graph PWA</span></div>
         <mat-nav-list>
           <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()"
              [routerLink]="[item.link]" routerLinkActive="active">
@@ -9,30 +9,30 @@
           </a>
         </mat-nav-list>
       </mat-sidenav>
-    
+
       <div class="wrapper">
-    
+
         <mat-toolbar color="primary">
-          
+
           <button mat-icon-button class="hidden-md-up" (click)="sidenav.open()">
             <mat-icon>menu</mat-icon>
           </button>
-    
+
           <span routerLink="" class="branding spacer d-md-none text-center">
-              <img [src]="logo"/> Tagia</span>
+              <img [src]="logo"/> Graph PWA</span>
           <span routerLink="" class="branding spacer d-none d-md-block"><img
-            [src]="logo"/> Tagia Vanilla Template</span>
-    
+            [src]="logo"/> Graph PWA Vanilla Template</span>
+
           <span class="d-none d-md-block">
             <button mat-button class="nav-button" *ngFor="let item of navigation"
                 [routerLink]="[item.link]" routerLinkActive="active">
               {{item.label}}
             </button>
           </span>
-    
-          <button *ngIf="!isAuthenticated" 
-                mat-button class="sign-in-button"  
-                (click)="onLoginClick()">Sign in</button>    
+
+          <button *ngIf="!isAuthenticated"
+                mat-button class="sign-in-button"
+                (click)="onLoginClick()">Sign in</button>
           <button *ngIf="isAuthenticated"
                   mat-icon-button
                   [matMenuTriggerFor]="toolbarUserMenu">
@@ -45,18 +45,18 @@
               <span>Logout</span>
             </button>
           </mat-menu>
-    
+
           <button mat-icon-button routerLink="settings" class="d-none d-md-block">
             <mat-icon>settings</mat-icon>
           </button>
-    
-    
+
+
         </mat-toolbar>
-    
+
         <div class="content" [@routerTransition]="o.isActivated && o.activatedRoute.routeConfig.path">
           <router-outlet #o="outlet"></router-outlet>
         </div>
-    
+
       </div>
-    
+
     </mat-sidenav-container>
