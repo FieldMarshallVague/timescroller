@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="main-heading">Features</h1>
+    </div>
+  </div>
+  <div class="row align-items-end">
+
+    <app-feature *ngFor="let feature of features" 
+      class="col-md-6 col-lg-4" 
+      [feature]="feature"
+      [ngClass]="animateOnRouteEnter"></app-feature>
+
+  </div>
+</div>

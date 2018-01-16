@@ -1,0 +1,17 @@
+@import 'jsplumbtoolkit-defaults';
+@import 'jsplumbtoolkit-demo';
+
+/** DISABLE TEXT SELECTION (SET ON BODY WHEN DRAGGING IS OCCURRING) **/
+._jsPlumb_drag_select * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+app-graph {
+  display: flex;
+  flex: 1;
+}

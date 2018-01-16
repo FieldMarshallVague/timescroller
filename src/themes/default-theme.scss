@@ -1,0 +1,19 @@
+$tagia-primary: mat-palette($mat-indigo, 800, 300, 900);
+$tagia-accent: mat-palette($mat-light-blue);
+$tagia-warn: mat-palette($mat-deep-orange, A200);
+
+$tagia-theme: mat-light-theme($tagia-primary, $tagia-accent, $tagia-warn);
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}

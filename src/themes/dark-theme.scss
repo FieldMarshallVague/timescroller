@@ -1,0 +1,9 @@
+$tagia-dark-primary: mat-palette($mat-grey, 900, 500, 900);
+$tagia-dark-accent: mat-palette($mat-green, A200);
+$tagia-dark-warn: mat-palette($mat-red, A200);
+
+$tagia-dark-theme: mat-dark-theme(
+  $tagia-dark-primary,
+  $tagia-dark-accent,
+  $tagia-dark-warn
+);

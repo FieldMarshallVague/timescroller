@@ -1,0 +1,9 @@
+$tagia-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$tagia-light-accent: mat-palette($mat-brown, 200);
+$tagia-light-warn: mat-palette($mat-deep-orange, 200);
+
+$tagia-light-theme: mat-light-theme(
+  $tagia-light-primary,
+  $tagia-light-accent,
+  $tagia-light-warn
+);
