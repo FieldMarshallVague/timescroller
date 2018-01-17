@@ -1,0 +1,48 @@
+:host{
+  display:flex;
+  width:100%;
+  flex-wrap: wrap;
+  padding: 1em 2em;
+}
+
+header{
+  display:flex;
+  flex: 1 0 100%;
+  padding: 1em 0;
+  font-size:1.6em;
+  font-weight:600;
+}
+
+.date{
+  flex:1 0 25%;
+}
+
+.title{
+  flex:1 0 50%;
+}
+
+.author{
+  flex:1 0 25%;
+}
+
+.body{
+  flex:1 0 100%;
+  color: #ddd;
+
+  img{
+    display:block;
+  }
+}
+
+
+footer{
+  display:flex;
+  flex: 1 0 100%;
+  padding: 1em 0;
+  font-size:1.2em;
+  font-weight:600;
+}
+
+.tags{
+  flex:1 0 100%;
+}

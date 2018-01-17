@@ -35,6 +35,10 @@ export class AppComponent implements OnInit, OnDestroy {
       label: 'About'
     },
     {
+      link: 'flat',
+      label: 'Flat'
+    },
+    {
       link: 'graph',
       label: 'Graph'
     },

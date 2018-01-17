@@ -1,0 +1,9 @@
+<header>
+  <div class="date">{{data.creationDate | date: 'yyyy/MM/dd hh:mm:ss'}}</div>
+  <div class="title">{{data.title}}</div>
+  <div class="author">{{data.author}}</div>
+</header>
+<div class="body" [innerHTML]="data.body"></div>
+<footer>
+  <div class="tags">{{parseTags(data.tags)}}</div>
+</footer>

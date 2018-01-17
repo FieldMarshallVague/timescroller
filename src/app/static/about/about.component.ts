@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoremPostGenerator, LoremPostGeneratorConfig, Post } from 'lorempostgen';
+
 import { ANIMATE_ON_ROUTE_ENTER } from '@app/core';
 
 @Component({
@@ -10,7 +12,7 @@ import { ANIMATE_ON_ROUTE_ENTER } from '@app/core';
 export class AboutComponent implements OnInit {
   animateOnRouteEnter = ANIMATE_ON_ROUTE_ENTER;
 
-  constructor() {}
+  constructor() {  }
 
   ngOnInit() {}
 }

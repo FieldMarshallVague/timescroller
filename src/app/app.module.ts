@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
 
+import { ScrollersModule } from './scrollers';
 import { GraphModule } from './graph';
 import { SettingsModule } from './settings';
 import { StaticModule } from './static';
@@ -29,6 +30,7 @@ import { AppComponent } from './app.component';
 
     // features
     GraphModule,
+    ScrollersModule,
     StaticModule,
     SettingsModule,
 
