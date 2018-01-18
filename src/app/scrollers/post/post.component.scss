@@ -25,8 +25,18 @@ header{
   flex:1 0 25%;
 }
 
+
+section.body{
+  display:flex;
+  flex: 1 0 100%;
+}
+
+.left-gutter, .right-gutter{
+  flex:1 0 25%;
+}
+
 .body{
-  flex:1 0 100%;
+  flex:1 0 50%;
   color: #ddd;
 
   img{
@@ -44,5 +54,5 @@ footer{
 }
 
 .tags{
-  flex:1 0 100%;
+  flex:1 0 50%;
 }
