@@ -3,7 +3,13 @@
   <div class="title">{{data.title}}</div>
   <div class="author">{{data.author}}</div>
 </header>
-<div class="body" [innerHTML]="data.body"></div>
+<section class="body">
+  <div class="left-gutter"></div>
+  <div class="body" [innerHTML]="data.body"></div>
+  <div class="right-gutter"></div>
+</section>
 <footer>
+  <div class="left-gutter"></div>
   <div class="tags">{{parseTags(data.tags)}}</div>
+  <div class="right-gutter"></div>
 </footer>
