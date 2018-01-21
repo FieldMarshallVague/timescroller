@@ -11,7 +11,7 @@ module.exports = {
     navigateFallback: '/index.html',
     runtimeCaching: [
       {
-        urlPattern: /^https:\/\/bustr.org\/.*/,
+        urlPattern: /^https:\/\/example.com\/.*/,
         handler: 'networkFirst'
       }
     ]
