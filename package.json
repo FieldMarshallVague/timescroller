@@ -1,5 +1,5 @@
 {
-  "name": "tagia-ui",
+  "name": "timescroller",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -35,7 +35,7 @@
     "core-js": "^2.5.3",
     "font-awesome": "^4.7.0",
     "jsplumb": "^2.5.13",
-    "lorempostgen": "^1.0.7",
+    "lorempostgen": "^1.0.8",
     "rxjs": "^5.5.6",
     "uuid": "^3.1.0",
     "zone.js": "^0.8.20"

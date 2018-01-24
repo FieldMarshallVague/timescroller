@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostComponent } from './post.component';
-import { Post } from 'lorempostgen';
+import { StreamComponent } from './stream.component';
 
-describe('PostComponent', () => {
-  let component: PostComponent;
-  let fixture: ComponentFixture<PostComponent>;
+describe('StreamComponent', () => {
+  let component: StreamComponent;
+  let fixture: ComponentFixture<StreamComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PostComponent ]
+      declarations: [ StreamComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PostComponent);
+    fixture = TestBed.createComponent(StreamComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

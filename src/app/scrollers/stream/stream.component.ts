@@ -7,11 +7,11 @@ import { PostComponent } from '../post/post.component';
 import { Post, LoremPostGenerator } from 'lorempostgen';
 
 @Component({
-  selector: 'app-flat',
-  templateUrl: './flat.component.html',
-  styleUrls: ['./flat.component.scss']
+  selector: 'app-stream',
+  templateUrl: './stream.component.html',
+  styleUrls: ['./stream.component.scss']
 })
-export class FlatComponent implements OnInit {
+export class StreamComponent implements OnInit {
   postGenerator: LoremPostGenerator;
   posts: Post[];
 
@@ -30,10 +30,10 @@ export class FlatComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.posts = this.getPosts();
+    this.getPosts().subscribe(results => (this.posts = results));
   }
 
   getPosts() {
-    return this.postGenerator.generate(100);
+    return this.postGenerator.generateStream(100);
   }
 }

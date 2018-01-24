@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FlatComponent } from './flat.component';
+import { PostComponent } from '../post/post.component';
+import { Post, LoremPostGenerator } from 'lorempostgen';
 
 describe('FlatComponent', () => {
   let component: FlatComponent;

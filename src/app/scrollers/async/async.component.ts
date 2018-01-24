@@ -7,11 +7,11 @@ import { PostComponent } from '../post/post.component';
 import { Post, LoremPostGenerator } from 'lorempostgen';
 
 @Component({
-  selector: 'app-flat',
-  templateUrl: './flat.component.html',
-  styleUrls: ['./flat.component.scss']
+  selector: 'app-async',
+  templateUrl: './async.component.html',
+  styleUrls: ['./async.component.scss']
 })
-export class FlatComponent implements OnInit {
+export class AsyncComponent implements OnInit {
   postGenerator: LoremPostGenerator;
   posts: Post[];
 
@@ -34,6 +34,6 @@ export class FlatComponent implements OnInit {
   }
 
   getPosts() {
-    return this.postGenerator.generate(100);
+    return this.postGenerator.generateAsync(100);
   }
 }

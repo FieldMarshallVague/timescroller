@@ -14,7 +14,7 @@ export class PostComponent implements OnInit {
   constructor() {  }
 
   ngOnInit() {
-    console.log(this.data);
+    // console.log(this.data);
   }
 
   parseTags(tags: string) {

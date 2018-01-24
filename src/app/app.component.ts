@@ -39,6 +39,14 @@ export class AppComponent implements OnInit, OnDestroy {
       label: 'Flat'
     },
     {
+      link: 'async',
+      label: 'Async'
+    },
+    {
+      link: 'stream',
+      label: 'Stream'
+    },
+    {
       link: 'graph',
       label: 'Graph'
     },

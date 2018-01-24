@@ -1,0 +1,15 @@
+
+https://fieldmarshallvague.github.io/timescroller/flat
+
+
+create anchor ids with the dates of the post they are assigned to
+  skip to these when dragging the date-part handles
+
+take an input stream from the scroller controls and pass to the 'scrollTo' function
+
+if those posts haven't been loaded (streamed) yet
+  then request them
+    load range from [endOfCurrentData] to [endOfScrollToRange]
+
+
+
