@@ -23,7 +23,10 @@ export class StreamComponent implements OnInit {
       maxContentLength: 2000,
       minImages: 0,
       maxImages: 0.51,
-      useLoremImages: true
+      useLoremImages: true,
+      minAsyncDelay: 0,
+      maxAsyncDelay: 500,
+      streamPageSize: 1
     };
 
     this.postGenerator = new LoremPostGenerator(config);
@@ -34,6 +37,6 @@ export class StreamComponent implements OnInit {
   }
 
   getPosts() {
-    return this.postGenerator.generateStream(100);
+    return this.postGenerator.generateSubject(100);
   }
 }
