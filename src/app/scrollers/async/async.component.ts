@@ -18,7 +18,7 @@ export class AsyncComponent implements OnInit {
   constructor() {
     const config = {
       startDate: new Date(2000, 0, 1),
-      endDate: new Date(2018, 0, 11),
+      endDate: new Date(),
       minContentLength: 10,
       maxContentLength: 2000,
       minImages: 0,
